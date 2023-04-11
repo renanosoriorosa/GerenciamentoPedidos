@@ -1,0 +1,17 @@
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\GerenciamentoPedido\GP.Data\bin\Debug\net6.0\GP.Data.deps.json
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\GerenciamentoPedido\GP.Data\bin\Debug\net6.0\GP.Data.runtimeconfig.json
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\GerenciamentoPedido\GP.Data\bin\Debug\net6.0\GP.Data.dll
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\GerenciamentoPedido\GP.Data\bin\Debug\net6.0\GP.Data.pdb
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\GerenciamentoPedido\GP.Data\bin\Debug\net6.0\GP.Models.dll
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\GerenciamentoPedido\GP.Data\bin\Debug\net6.0\GP.Models.pdb
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\GerenciamentoPedido\GP.Data\obj\Debug\net6.0\GP.Data.csproj.AssemblyReference.cache
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\GerenciamentoPedido\GP.Data\obj\Debug\net6.0\GP.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\GerenciamentoPedido\GP.Data\obj\Debug\net6.0\GP.Data.AssemblyInfoInputs.cache
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\GerenciamentoPedido\GP.Data\obj\Debug\net6.0\GP.Data.AssemblyInfo.cs
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\GerenciamentoPedido\GP.Data\obj\Debug\net6.0\GP.Data.csproj.CoreCompileInputs.cache
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\GerenciamentoPedido\GP.Data\obj\Debug\net6.0\GP.Data.csproj.CopyComplete
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\GerenciamentoPedido\GP.Data\obj\Debug\net6.0\GP.Data.dll
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\GerenciamentoPedido\GP.Data\obj\Debug\net6.0\refint\GP.Data.dll
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\GerenciamentoPedido\GP.Data\obj\Debug\net6.0\GP.Data.pdb
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\GerenciamentoPedido\GP.Data\obj\Debug\net6.0\GP.Data.genruntimeconfig.cache
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\GerenciamentoPedido\GP.Data\obj\Debug\net6.0\ref\GP.Data.dll
