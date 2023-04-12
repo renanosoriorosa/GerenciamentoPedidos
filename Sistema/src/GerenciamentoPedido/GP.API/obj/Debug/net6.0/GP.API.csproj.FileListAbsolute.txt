@@ -78,3 +78,4 @@ C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\Gerenciamento
 C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\GerenciamentoPedido\GP.API\bin\Debug\net6.0\GP.Core.pdb
 C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\GerenciamentoPedido\GP.API\bin\Debug\net6.0\GP.Data.pdb
 C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\GerenciamentoPedido\GP.API\bin\Debug\net6.0\GP.Models.pdb
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\src\GerenciamentoPedido\GP.API\bin\Debug\net6.0\FluentValidation.dll

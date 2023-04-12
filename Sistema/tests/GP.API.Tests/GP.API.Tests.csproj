@@ -21,4 +21,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\GerenciamentoPedido\GP.Models\GP.Models.csproj" />
+  </ItemGroup>
+
 </Project>

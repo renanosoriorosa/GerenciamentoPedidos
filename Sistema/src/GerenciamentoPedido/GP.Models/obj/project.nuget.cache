@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "TtShmdEqzKxcmiUVQPhdF4GWAf+oVbGgLFxZ8OX2QY/u0ZrHrq2YhpuYKKFFQUkM40t+hdCGu46dTevF/yRZGA==",
+  "dgSpecHash": "u2CP7QQD7hylmP0m3Tk6rG8bgkV0ml1MkD70n1rw3ikyzNfjwVB8uyekCSORK3z/h2M+Wj3S+5Ls23Sx1ML4RQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Renan\\Documents\\Projetos\\GerenciamentoPedidos\\Sistema\\src\\GerenciamentoPedido\\GP.Models\\GP.Models.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Renan\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512"
+  ],
   "logs": []
 }

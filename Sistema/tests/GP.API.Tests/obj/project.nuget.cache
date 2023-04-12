@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "JA2hm8+CcRoSg1DTUnlqQd5X0a5kqL4hzNkQwq30UyiNPp4HbNpTNH1ttTenlLLiGu8Uh346ORDuJfOSTyUxKg==",
+  "dgSpecHash": "8A/KMwtAYERTLySdzhKewu9nDpKg9LMwIF6rmR0ooyf4ZkPSV3iOHED+MCbgXbnRXOh3y1/highgG2x/BfIHHg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Renan\\Documents\\Projetos\\GerenciamentoPedidos\\Sistema\\tests\\GP.API.Tests\\GP.API.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Renan\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
+    "C:\\Users\\Renan\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\Renan\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",
     "C:\\Users\\Renan\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\Renan\\.nuget\\packages\\microsoft.net.test.sdk\\17.1.0\\microsoft.net.test.sdk.17.1.0.nupkg.sha512",

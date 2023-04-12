@@ -97,3 +97,7 @@ C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\tests\GP.API.Test
 C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\tests\GP.API.Tests\obj\Debug\net6.0\GP.API.Tests.pdb
 C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\tests\GP.API.Tests\obj\Debug\net6.0\GP.API.Tests.genruntimeconfig.cache
 C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\tests\GP.API.Tests\obj\Debug\net6.0\ref\GP.API.Tests.dll
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\tests\GP.API.Tests\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\tests\GP.API.Tests\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\tests\GP.API.Tests\bin\Debug\net6.0\GP.Models.dll
+C:\Users\Renan\Documents\Projetos\GerenciamentoPedidos\Sistema\tests\GP.API.Tests\bin\Debug\net6.0\GP.Models.pdb

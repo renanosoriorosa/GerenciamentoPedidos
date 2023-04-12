@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Tz2Qt9jRg4saYZiOHccF58E5YEYDpsBwm06FB/sdOh/6oRUOxYPaXXnwSeQrHy+6IeB7/OwdqhISawnE6p2VQw==",
+  "dgSpecHash": "jt4cCouEygWzXdmXvba+pO4zdA3ShuJ9Pgh0fRsuVRO6gN6sCr8sJRGZ2JhxoPZI8yIXeRFx5qOABomPBe/DPg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Renan\\Documents\\Projetos\\GerenciamentoPedidos\\Sistema\\src\\GerenciamentoPedido\\GP.API\\GP.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Renan\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\Renan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Renan\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.15\\microsoft.aspnetcore.authentication.jwtbearer.6.0.15.nupkg.sha512",
     "C:\\Users\\Renan\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.15\\microsoft.aspnetcore.cryptography.internal.6.0.15.nupkg.sha512",
