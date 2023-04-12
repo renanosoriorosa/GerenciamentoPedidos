@@ -41,5 +41,20 @@ namespace GP.API.Tests.ProdutoTests
             Assert.False(result);
             Assert.NotEmpty(produto.ValidationResult.Errors);
         }
+
+        [Fact(DisplayName = "Novo Produto Invalido Limite Dos Campos")]
+        [Trait("Categoria", "Produto Testes")]
+        public void Produto_NovoProduto_DeveEstarInvalidoLimiteCampos()
+        {
+            // Arrange
+            var produto = _produtoTestsFixture.GerarProdutoInValidoComCamposMaximosUltrapassados();
+
+            // Act
+            var result = produto.EhValido();
+
+            // Assert 
+            Assert.False(result);
+            Assert.NotEmpty(produto.ValidationResult.Errors);
+        }
     }
 }

@@ -31,6 +31,17 @@ namespace GP.API.Tests.ProdutoTests
             return Produto;
         }
 
+        public Produto GerarProdutoInValidoComCamposMaximosUltrapassados()
+        {
+            var Produto = new Produto(
+                "99999999999",
+                "9999999999999999999999999999999",
+                "",
+                TipoProdutoEnum.ProdutoIntermediario);
+
+            return Produto;
+        }
+
         public void Dispose()
         {
         }
