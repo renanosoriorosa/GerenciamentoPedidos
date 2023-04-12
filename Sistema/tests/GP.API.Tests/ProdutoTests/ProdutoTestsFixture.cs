@@ -36,7 +36,7 @@ namespace GP.API.Tests.ProdutoTests
             var Produto = new Produto(
                 "99999999999",
                 "9999999999999999999999999999999",
-                "",
+                "1",
                 TipoProdutoEnum.ProdutoIntermediario);
 
             return Produto;

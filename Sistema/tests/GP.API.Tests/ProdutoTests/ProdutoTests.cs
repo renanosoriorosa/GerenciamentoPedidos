@@ -39,7 +39,7 @@ namespace GP.API.Tests.ProdutoTests
 
             // Assert 
             Assert.False(result);
-            Assert.NotEmpty(produto.ValidationResult.Errors);
+            Assert.Equal(5,produto.ValidationResult.Errors.Count);
         }
 
         [Fact(DisplayName = "Novo Produto Invalido Limite Dos Campos")]
@@ -54,7 +54,7 @@ namespace GP.API.Tests.ProdutoTests
 
             // Assert 
             Assert.False(result);
-            Assert.NotEmpty(produto.ValidationResult.Errors);
+            Assert.Equal(3, produto.ValidationResult.Errors.Count);
         }
     }
 }
