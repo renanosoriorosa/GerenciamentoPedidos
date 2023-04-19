@@ -1,20 +1,42 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using GP.Models.Models.Validations;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GP.Models.Models
 {
     public class Estoque : Entity
     {
-        [Required(ErrorMessage = "O campo {0} é obrigatório.")]
-        [StringLength(10)]
         public string Nome { get; private set; }
-
-        [StringLength(100, MinimumLength = 3, ErrorMessage = "Informe entre {1} a {0} caracteres.")]
         public string Descricao { get; private set; }
+        public bool Ativo { get; private set; }
 
+        public ICollection<CodigoBarrasVolume> Volumes { get; }
+
+        public Estoque()
+        {
+        }
+
+        public Estoque(string nome, string descricao)
+        {
+            Nome = nome;
+            Descricao = descricao;
+            Ativo = true;
+        }
+
+        public void Ativar()
+        {
+            Ativo = true;
+        }
+
+        public void Inativar()
+        {
+            Ativo = false;
+        }
+
+        public override bool EhValido()
+        {
+            ValidationResult = new EstoqueValidation().Validate(this);
+            return ValidationResult.IsValid;
+        }
     }
 }

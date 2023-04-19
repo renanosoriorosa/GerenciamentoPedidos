@@ -1,4 +1,5 @@
 ﻿using FluentValidation.Results;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GP.Models.Models
 {
@@ -6,6 +7,7 @@ namespace GP.Models.Models
     {
         public int Id { get; set; }
 
+        [NotMapped]
         public ValidationResult ValidationResult { get; protected set; }
 
         public virtual bool EhValido()

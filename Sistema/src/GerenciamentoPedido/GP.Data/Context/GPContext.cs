@@ -26,5 +26,7 @@ namespace GP.Data.Context
 
 
         public DbSet<Produto> Produto { get; set; }
+        public DbSet<Estoque> Estoque { get; set; }
+        public DbSet<Recebimento> Recebimento { get; set; }
     }
 }

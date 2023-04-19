@@ -4,6 +4,7 @@ using GP.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GP.Data.Migrations
 {
     [DbContext(typeof(GPContext))]
-    partial class GPContextModelSnapshot : ModelSnapshot
+    [Migration("20230419224429_AddCodigoBarras")]
+    partial class AddCodigoBarras
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,53 +23,6 @@ namespace GP.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
-
-            modelBuilder.Entity("GP.Models.Models.CodigoBarrasVolume", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("CodigoBarras")
-                        .IsRequired()
-                        .HasColumnType("varchar(200)");
-
-                    b.Property<int>("EstoqueId")
-                        .HasColumnType("int");
-
-                    b.Property<double>("PrecoUnitario")
-                        .HasColumnType("float");
-
-                    b.Property<int>("ProdutoId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("QuantidadeEntrada")
-                        .HasColumnType("int");
-
-                    b.Property<int>("QuantidadeReservada")
-                        .HasColumnType("int");
-
-                    b.Property<int>("QuantidadeSaida")
-                        .HasColumnType("int");
-
-                    b.Property<int>("RecebimentoId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("EstoqueId");
-
-                    b.HasIndex("ProdutoId");
-
-                    b.HasIndex("RecebimentoId");
-
-                    b.ToTable("CodigoBarrasVolume");
-                });
 
             modelBuilder.Entity("GP.Models.Models.Estoque", b =>
                 {
@@ -143,45 +98,6 @@ namespace GP.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Recebimento");
-                });
-
-            modelBuilder.Entity("GP.Models.Models.CodigoBarrasVolume", b =>
-                {
-                    b.HasOne("GP.Models.Models.Estoque", "Estoque")
-                        .WithMany("Volumes")
-                        .HasForeignKey("EstoqueId")
-                        .IsRequired();
-
-                    b.HasOne("GP.Models.Models.Produto", "Produto")
-                        .WithMany("Volumes")
-                        .HasForeignKey("ProdutoId")
-                        .IsRequired();
-
-                    b.HasOne("GP.Models.Models.Recebimento", "Recebimento")
-                        .WithMany("Volumes")
-                        .HasForeignKey("RecebimentoId")
-                        .IsRequired();
-
-                    b.Navigation("Estoque");
-
-                    b.Navigation("Produto");
-
-                    b.Navigation("Recebimento");
-                });
-
-            modelBuilder.Entity("GP.Models.Models.Estoque", b =>
-                {
-                    b.Navigation("Volumes");
-                });
-
-            modelBuilder.Entity("GP.Models.Models.Produto", b =>
-                {
-                    b.Navigation("Volumes");
-                });
-
-            modelBuilder.Entity("GP.Models.Models.Recebimento", b =>
-                {
-                    b.Navigation("Volumes");
                 });
 #pragma warning restore 612, 618
         }
