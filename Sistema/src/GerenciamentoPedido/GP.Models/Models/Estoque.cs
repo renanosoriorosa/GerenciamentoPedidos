@@ -6,7 +6,11 @@ namespace GP.Models.Models
 {
     public class Estoque : Entity
     {
+        [Required]
+        [StringLength(10, MinimumLength = 3)]
         public string Nome { get; private set; }
+
+        [StringLength(200, MinimumLength = 2)]
         public string Descricao { get; private set; }
         public bool Ativo { get; private set; }
 

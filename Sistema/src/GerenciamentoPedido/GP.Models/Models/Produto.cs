@@ -8,10 +8,15 @@ namespace GP.Models.Models
     public class Produto : Entity
     {
         [Required]
+        [StringLength(10, MinimumLength = 2)]
         public string Codigo { get; private set; }
 
         [Required]
+        [StringLength(30, MinimumLength = 2)]
         public string Nome { get; private set; }
+
+
+        [StringLength(200, MinimumLength = 3)]
         public string Descricao { get; private set; }
 
         public TipoProdutoEnum TipoProduto { get; private set; }
