@@ -23,6 +23,8 @@ namespace GP.API.Tests.RecebimentoTests
         {
             var recebimento = new Recebimento("98222");
 
+            recebimento.Volumes = new List<CodigoBarrasVolume>();
+
             return recebimento;
         }
 

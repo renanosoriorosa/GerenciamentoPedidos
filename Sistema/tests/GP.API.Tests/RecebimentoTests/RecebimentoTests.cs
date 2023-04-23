@@ -27,6 +27,36 @@ namespace GP.API.Tests.RecebimentoTests
             Assert.Empty(Recebimento.ValidationResult.Errors);
         }
 
+        [Fact(DisplayName = "Novo Recebimento Inválido Com Volumes")]
+        [Trait("Categoria", "Recebimento Testes")]
+        public void Recebimento_NovoRecebimentoComVolumes_DeveEstarInvalido()
+        {
+            // Arrange
+            var Recebimento = _RecebimentoTestsFixture.GerarRecebimentoInvalidoComVolumes();
+
+            // Act
+            var result = Recebimento.EhValido();
+
+            // Assert 
+            Assert.False(result);
+            Assert.Equal(1, Recebimento.ValidationResult.Errors.Count);
+        }
+
+        [Fact(DisplayName = "Novo Recebimento Válido Sem Volumes")]
+        [Trait("Categoria", "Recebimento Testes")]
+        public void Recebimento_NovoRecebimentoSemVolumes_DeveEstarInvalido()
+        {
+            // Arrange
+            var Recebimento = _RecebimentoTestsFixture.GerarRecebimentoValidoSemVolumes();
+
+            // Act
+            var result = Recebimento.EhValido();
+
+            // Assert 
+            Assert.True(result);
+            Assert.NotEqual(2, Recebimento.Volumes.Count());
+        }
+
         [Fact(DisplayName = "Finalizar Recebimento Válido")]
         [Trait("Categoria", "Recebimento Testes")]
         public void Recebimento_FinalizarRecebimento_DeveEstarValido()
