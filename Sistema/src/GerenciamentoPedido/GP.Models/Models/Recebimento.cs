@@ -19,7 +19,7 @@ namespace GP.Models.Models
 
         public RecebimentoStatusEnum Status { get; private set; }
 
-        public ICollection<CodigoBarrasVolume> Volumes { get; }
+        public ICollection<CodigoBarrasVolume> Volumes { get; set; }
 
         public Recebimento()
         {
@@ -68,7 +68,40 @@ namespace GP.Models.Models
 
         public void Finalizar()
         {
-            Status = RecebimentoStatusEnum.Finalizado;
+            if(PodeFinalizar())
+                Status = RecebimentoStatusEnum.Finalizado;
+        }
+
+        private bool PodeFinalizar()
+        {
+            if (Volumes != null && Volumes.Count > 0)
+                return true;
+
+            return false;
+        }
+
+        public bool isFinalizado()
+        {
+            if (Status == RecebimentoStatusEnum.Finalizado)
+                return true;
+
+            return false;
+        }
+
+        public bool isCancelado()
+        {
+            if (Status == RecebimentoStatusEnum.Cancelado)
+                return true;
+
+            return false;
+        }
+
+        public void AdicionarVolume(CodigoBarrasVolume volume)
+        {
+            if(Volumes == null)
+                Volumes = new List<CodigoBarrasVolume>();
+
+            Volumes.Add(volume);
         }
 
         public override bool EhValido()
