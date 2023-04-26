@@ -13,7 +13,7 @@ namespace GP.API.Configuration
         {
             services.AddSwaggerGen(c =>
             {
-                c.OperationFilter<SwaggerDefaultValues>();
+                //c.OperationFilter<SwaggerDefaultValues>();
 
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {

@@ -9,7 +9,7 @@ namespace GP.API.Configuration
         public static IServiceCollection AddApiConfig(this IServiceCollection services)
         {
             services.AddControllers()
-                .AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles); ;
+                .AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
             services.AddApiVersioning(options =>
             {
@@ -37,10 +37,9 @@ namespace GP.API.Configuration
                 options.AddPolicy("Production",
                     builder =>
                         builder
-                            .WithMethods("GET")
-                            .WithOrigins("http://renanosorio.io")
-                            .SetIsOriginAllowedToAllowWildcardSubdomains()
-                            .AllowAnyHeader());
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader());
             });
 
             return services;
@@ -51,7 +50,7 @@ namespace GP.API.Configuration
             if (env.IsDevelopment())
             {
                 app.UseCors("Development");
-                app.UseSwagger();
+                
             }
             else
             {
@@ -59,7 +58,7 @@ namespace GP.API.Configuration
                 app.UseHsts();
             }
 
-            app.UseMiddleware<ExceptionMiddleware>();
+            //app.UseMiddleware<ExceptionMiddleware>();
 
             app.UseHttpsRedirection();
 

@@ -12,11 +12,17 @@ builder.Services.AddDbContext<GPContext>(options =>
 
 builder.Services.AddIdentityConfig(builder.Configuration);
 
+builder.Services.AddJWTConfig(builder.Configuration);
+
 builder.Services.AddApiConfig();
 
 builder.Services.AddSwaggerConfig();
 
+builder.Services.AddControllers();
+
 builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddMvc();
 
 builder.Services.ResolveDependencies();
 
