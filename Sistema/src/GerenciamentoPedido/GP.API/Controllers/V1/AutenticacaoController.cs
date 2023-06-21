@@ -9,6 +9,7 @@ using GP.API.ViewModel;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using GP.Core.Interfaces;
 
 namespace GP.API.Controllers.V1
 {

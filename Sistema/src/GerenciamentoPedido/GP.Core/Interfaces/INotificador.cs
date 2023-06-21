@@ -1,6 +1,6 @@
-﻿using GP.API.Notificacoes;
+﻿using GP.Core.Notificacoes;
 
-namespace GP.API.Interfaces
+namespace GP.Core.Interfaces
 {
     public interface INotificador
     {

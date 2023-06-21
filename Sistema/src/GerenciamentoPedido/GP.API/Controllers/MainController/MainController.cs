@@ -1,5 +1,6 @@
 ﻿using GP.API.Interfaces;
-using GP.API.Notificacoes;
+using GP.Core.Notificacoes;
+using GP.Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 

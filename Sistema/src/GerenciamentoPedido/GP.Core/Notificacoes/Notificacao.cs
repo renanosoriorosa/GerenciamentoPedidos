@@ -1,4 +1,4 @@
-﻿namespace GP.API.Notificacoes
+﻿namespace GP.Core.Notificacoes
 {
     public class Notificacao
     {

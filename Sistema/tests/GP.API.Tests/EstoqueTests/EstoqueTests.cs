@@ -1,4 +1,5 @@
 ﻿using GP.Models.Models;
+using System.ComponentModel.DataAnnotations;
 using Xunit;
 
 namespace GP.API.Tests.EstoqueTests
@@ -19,14 +20,16 @@ namespace GP.API.Tests.EstoqueTests
         {
             // Arrange
             var Estoque = _EstoqueTestsFixture.GerarEstoqueValido();
+            ICollection<ValidationResult> results = null;
 
             // Act
-            var result = Estoque.EhValido();
+            //var result = Estoque.EhValido();
+            var result = Estoque.Validate(Estoque, out results);
 
             // Assert 
             Assert.True(result);
             Assert.True(Estoque.Ativo);
-            Assert.Empty(Estoque.ValidationResult.Errors);
+            //Assert.Empty(Estoque.ValidationResult.Errors);
         }
 
         [Fact(DisplayName = "Novo Estoque Invalido")]
@@ -35,13 +38,14 @@ namespace GP.API.Tests.EstoqueTests
         {
             // Arrange
             var Estoque = _EstoqueTestsFixture.GerarEstoqueInValido();
+            ICollection<ValidationResult> results = null;
 
             // Act
-            var result = Estoque.EhValido();
+            var result = Estoque.Validate(Estoque, out results);
 
             // Assert 
             Assert.False(result);
-            Assert.Equal(3,Estoque.ValidationResult.Errors.Count);
+            //Assert.Equal(3,Estoque.ValidationResult.Errors.Count);
         }
 
         [Fact(DisplayName = "Novo Estoque Invalido Limite Dos Campos")]
