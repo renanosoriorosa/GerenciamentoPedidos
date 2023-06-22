@@ -7,5 +7,6 @@ namespace GP.Data.Interfaces
     {
         Task<IEnumerable<Produto>> ObterProdutosPorTipo(TipoProdutoEnum tipo);
         Task<IEnumerable<Produto>> ObterProdutosPorTipoAsNotracking(TipoProdutoEnum tipo);
+        Task<Produto?> ObterPorIdAsNoTracking(int id);
     }
 }

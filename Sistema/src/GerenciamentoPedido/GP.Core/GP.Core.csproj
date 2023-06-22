@@ -5,7 +5,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+  </ItemGroup>
+  
   <ItemGroup>
     <ProjectReference Include="..\GP.Data\GP.Data.csproj" />
     <ProjectReference Include="..\GP.Models\GP.Models.csproj" />

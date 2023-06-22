@@ -24,5 +24,12 @@ namespace GP.Data.Repository
                 .AsNoTracking()
                 .ToListAsync();
         }
+
+        public async Task<Produto?> ObterPorIdAsNoTracking(int id)
+        {
+            return await _context.Produto
+                .AsNoTracking()
+                .FirstOrDefaultAsync(obj => obj.Id == id);
+        }
     }
 }

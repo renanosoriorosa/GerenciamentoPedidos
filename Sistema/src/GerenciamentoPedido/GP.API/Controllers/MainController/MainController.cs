@@ -50,6 +50,15 @@ namespace GP.API.Controllers
             });
         }
 
+        protected ActionResult SendBadRequest(string message)
+        {
+            return BadRequest(new
+            {
+                success = false,
+                message = message
+            });
+        }
+
         protected ActionResult CustomResponse(ModelStateDictionary modelState)
         {
             if (!modelState.IsValid) NotificarErroModelInvalida(modelState);
